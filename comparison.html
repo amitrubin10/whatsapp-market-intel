@@ -9,7 +9,17 @@
  .wrap{max-width:1240px;margin:0 auto;padding:0 20px 80px}
  header.top{background:linear-gradient(135deg,#0a6fa8,#0E98E3 60%,#36b3f0);color:#fff;padding:34px 0 28px;box-shadow:var(--shadow)}
  .hi{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
- .eyebrow{font-size:14px;font-weight:700;opacity:.9} h1{font-family:'Heebo';font-size:30px;font-weight:900;margin:4px 0}
+ .eyebrow{font-size:14px;font-weight:700;opacity:.9}
+ h1{font-family:'Heebo';font-size:36px;font-weight:900;line-height:1.12;margin:6px 0 2px;position:relative;display:inline-block;padding-bottom:14px;
+   background:linear-gradient(100deg,#eafaff 0%,#ffffff 22%,#bfe9ff 52%,#7fd0ff 72%,#eafaff 100%);background-size:230% auto;
+   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;
+   filter:drop-shadow(0 3px 16px rgba(80,185,255,.55));animation:hshine 7s linear infinite}
+ h1::before{content:"";position:absolute;right:-6px;top:-8px;width:46px;height:46px;border-radius:50%;
+   background:radial-gradient(circle,rgba(140,215,255,.55),rgba(140,215,255,0) 70%);z-index:-1;pointer-events:none}
+ h1::after{content:"";position:absolute;right:0;bottom:3px;height:4px;width:104px;border-radius:4px;
+   background:linear-gradient(270deg,#ffffff,#7fd8ff 45%,rgba(127,216,255,0));box-shadow:0 0 14px rgba(127,216,255,.9)}
+ @keyframes hshine{to{background-position:-230% center}}
+ @media(prefers-reduced-motion:reduce){h1{animation:none}}
  .sub{opacity:.92;font-size:15px}
  .backbtn{display:inline-flex;align-items:center;gap:9px;background:#fff;color:#0a6fa8;text-decoration:none;font-weight:800;font-size:14px;padding:11px 22px;border-radius:30px;white-space:nowrap;box-shadow:0 5px 16px rgba(0,0,0,.22);transition:.16s}
  .backbtn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3)}
