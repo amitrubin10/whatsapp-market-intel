@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow, noarchive">
 <title>השוואת מערכות — מרכז מודיעין מוצר · חשבשבת</title>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Heebo:wght@400;500;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
  :root{--bg:#eef2f7;--card:#fff;--ink:#16202e;--muted:#64748b;--line:#e2e8f0;--brand:#0E98E3;--shadow:0 1px 3px rgba(16,32,46,.08),0 8px 24px rgba(16,32,46,.06)}
  *{box-sizing:border-box;margin:0;padding:0} body{font-family:'Assistant','Heebo',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
@@ -73,6 +73,7 @@
  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;margin-top:12px;color:var(--muted)}
  .legend b{color:var(--ink)}
  footer{text-align:center;color:var(--muted);font-size:13px;padding:24px 0 0;border-top:1px solid var(--line);margin-top:20px}
+ .sig{direction:ltr;text-align:left;font-family:'Great Vibes',cursive;font-size:30px;line-height:1;color:#7c8ba1;opacity:.85;padding:10px 4px 30px;letter-spacing:.5px}
  @media(max-width:820px){.pgrid2{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr}}
 </style></head><body>
 <header class="top"><div class="hi">
@@ -135,4 +136,5 @@
  </div>
 
  <footer>מרכז מודיעין מוצר · חשבשבת · אפיון מבוסס וובינרים ומקורות רשמיים + קול השוק מהקהילות<br>מסמך פנימי · עמודת חשבשבת לאימות מול מומחה המוצר · 11.08.2026</footer>
+ <div class="sig">Amit Rubin</div>
 </div><script>(function(){var scope=document.getElementById("scope");if(!scope)return;if(window.matchMedia&&window.matchMedia("(prefers-reduced-motion:reduce)").matches)return;var lens=document.getElementById("hdrLens"),img=lens.querySelector("img"),ring=document.getElementById("hdrRing");var stops=[{"x": 0.03, "y": 0.135, "w": 0.165, "h": 0.365}, {"x": 0.205, "y": 0.135, "w": 0.16, "h": 0.365}, {"x": 0.375, "y": 0.145, "w": 0.225, "h": 0.36}, {"x": 0.615, "y": 0.15, "w": 0.165, "h": 0.345}, {"x": 0.8, "y": 0.14, "w": 0.19, "h": 0.36}, {"x": 0.3, "y": 0.505, "w": 0.165, "h": 0.275}, {"x": 0.525, "y": 0.505, "w": 0.165, "h": 0.275}],Z=2.35,i=-1,started=false;function place(){var W=scope.clientWidth,H=scope.clientHeight;if(!W||i<0)return false;var D=Math.round(H*0.5);lens.style.width=D+"px";lens.style.height=D+"px";img.style.width=(W*Z)+"px";var s=stops[i],cx=(s.x+s.w/2)*W,cy=(s.y+s.h/2)*H;lens.style.left=(cx-D/2)+"px";lens.style.top=(cy-D/2)+"px";img.style.left=(D/2-cx*Z)+"px";img.style.top=(D/2-cy*Z)+"px";ring.style.left=(s.x*W)+"px";ring.style.top=(s.y*H)+"px";ring.style.width=(s.w*W)+"px";ring.style.height=(s.h*H)+"px";lens.style.opacity=1;ring.style.opacity=1;return true;}function next(){i=(i+1)%stops.length;place();}function boot(){if(scope.clientWidth){i=0;place();started=true;setInterval(next,2000);}else{requestAnimationFrame(boot);}}boot();window.addEventListener("resize",function(){if(started)place();});})();</script></body></html>
